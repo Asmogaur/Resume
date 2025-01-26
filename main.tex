@@ -1,0 +1,171 @@
+%--------------------------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%--------------------------------------------
+
+% https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS-----------------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+%---------------------------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%------------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%----------HEADING-------------------------------
+\begin{center}
+    \textbf{\Huge \scshape Dhairya Pratap Singh Gaur} \\ \vspace{1pt}
+    \small +91 7454948411 $|$ \href{mailto:dhairyagaur98@gmail.com}{{dhairyagaur98@gmail.com}}    \\ 
+    \small  
+    \href{https://www.linkedin.com/in/asmogaur/}{\bf LinkedIn} $|$
+    \href{https://github.com/Asmogaur}{\bf GitHub} 
+    
+\end{center}
+%-------------------------------------------------
+
+%-----------PROJECTS------------------------------
+\section{Profile}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item 
+Data Engineer with 3+ years of experience leveraging big data technologies \textbf{(Python, SQL, PySpark, Databricks)} to build scalable \textbf{ETL} pipelines, process large datasets, and deliver actionable insights. Proven ability to streamline workflows and enhance data quality across cloud-based platforms \textbf{(GCP)}.
+\end{itemize}
+%------------------------------------------------
+
+%---------TECHNICAL SKILLS-----------------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{:\hspace{0.77cm} Python, SQL, C++} \\
+     \textbf{Big Data Technologies}{:\hspace{1.20cm} Spark, PySpark, Spark SQL} \\
+     \textbf{Cloud Computing}{:\hspace{1.98cm} Databricks, Google Cloud Platform (GCP)} \\
+     \textbf{Data Engineering Concepts}{:\hspace{0.30cm} Data Warehouse, Data Lake, Data Lakehouse, Medallion Architecture }\\
+     \textbf{Visualisation Tools}{:\hspace{1.81cm} Amazon QuickSight} \\
+    }}
+ \end{itemize}
+%-----------------------------------------------
+
+%-----------EXPERIENCE--------------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {KPMG}{November 2021 - Present}
+      {Data Engineer}{Bangalore, India}
+      \resumeItemListStart
+      \resumeItem{Ported and optimised SQL scripts from Teradata for catalog tables to ensure efficient and effective migration.}
+      \resumeItem{Built metadata scripts and constructed \textbf{ETL} data pipelines within the \textbf{Medallion Architecture} framework.}
+      \resumeItem{Implemented data processing and transformation logic using \textbf{PySpark} and optimised queries with \textbf{Spark SQL}, reducing runtime by 50\%.}
+      \resumeItem{Deployed and managed scalable data solutions leveraging \textbf{Databricks} for collaborative development and performance tuning.}
+      \resumeItemListEnd
+
+      \resumeItemListStart
+      \resumeItem{Designed and implemented detailed reports and data analysis pipelines.}
+      \resumeItem{Developed interactive, data-driven dashboards utilising \textbf{Amazon QuickSight} for visualisation.}
+      \resumeItem {Managed database operations and optimised queries using \textbf{pgAdmin} with \textbf{PostgreSQL}.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SmartBridge}{May 2020 - June 2020}
+      {Machine Learning Engineer (Intern)}{Hyderabad, India}
+      \resumeItemListStart
+      \resumeItem {Developed an automated AI system to predict individual life expectancy, achieving a predictive accuracy of 93\%.}
+      \resumeItem {Incorporated various factors such as demographic, health, lifestyle, and socioeconomic data.}
+      \resumeItem {Utilized IBM frameworks, including :}
+      \resumeItem{\textbf{IBM Cloud} for infrastructure and scalability.}
+      \resumeItem{\textbf{IBM Watson} for data processing and machine learning model development.}
+      \resumeItem{\textbf{IBM Machine Learning Instance} for model training, deployment, and real-time predictions.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%---------------------------------------------------
+
+%------------CERTIFICATIONS-------------------------
+\section{Certifications}
+    \resumeItemListStart
+    \resumeItem {Databricks Fundamentals}
+    \resumeItem {Databricks Lakehouse Fundamentals}
+    \resumeItem {AWS Databricks Platform Architect}
+    \resumeItem {GCP Databricks Platform Architect}
+    \resumeSubHeadingListEnd
+%---------------------------------------------------
+
+%-----------EDUCATION-------------------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Guru Gobind Singh Indraprastha University}{CGPA - 7.1}
+      {Bachelor of Technology in Electronic and Communication Engineering}{August 2017 - July 2021}
+    \resumeSubheading
+      {Kendriya Vidyalaya Sangathan}{12th - 77.4\%}
+      {Physics, Chemistry, Mathematics, English and Computer Science}{April 2015 - March 2016}
+  \resumeSubHeadingListEnd
+%---------------------------------------------------
+\end{document}
