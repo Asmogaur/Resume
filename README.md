@@ -1,2 +1,2 @@
 # Resume
-Used Jake Ryan overleaf template for my resume.
+Used the Jake Ryan Overleaf resume template, achieving an ATS score of 93 out of 100.
